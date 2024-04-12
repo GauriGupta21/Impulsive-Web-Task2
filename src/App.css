@@ -1,0 +1,161 @@
+*body {
+    margin: 0;
+    padding: 0%;
+    user-select: none;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 70%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.hero_section {
+    width: 100vw;
+
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.hero_section h1 {
+    display: flex;
+    justify-content: center;
+    /* text-decoration: underline; */
+    margin-bottom: 70px;
+    color: #2a0000;
+
+}
+.navbar {
+    width: 50vw;
+    /* height: 20vh; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: black;
+    align-items: center;
+    border-bottom: .15rem solid #2a0000;
+    margin-bottom: 10px;
+}
+.navbar a{
+    color: black;
+}
+.navbar a:hover{
+    border-color: #3A3845;
+    color: #d14d72;
+}
+form input{
+    border: .1rem solid #ccc;
+    border-radius: .3rem;
+    width: 45rem;
+    margin: 3rem 0;
+    padding: .6rem 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+form button{
+    padding: .8rem 3.8rem;
+    border: none;
+    border-radius: .3rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 2.4rem;
+     background-color: #d14d72;
+     color: #fff;
+     font-size: 15px;
+}
+
+label{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;align-items: center;
+    justify-content: center;
+    width: 45vw;
+    flex-wrap: wrap;
+}
+.taskList li{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    width:90rem;
+    min-height: 6rem;
+    list-style: none;
+    border-bottom: .1rem solid #ccc;
+    
+}
+
+.taskList li:first-child{
+    border-top: .1rem solid #ccc;
+}
+
+
+.taskList li input[type="checkbox"]:checked  + label {
+    text-decoration: line-through;
+    color: #3A3845;
+}
+
+.taskList li button{
+    padding: .7rem 1rem;
+    width: 7rem;
+    background-color: #D14D72;
+    color: #FFF9F9;
+    border:none;
+    display: inline-block;
+    cursor: pointer;
+    justify-self: center;
+    letter-spacing: .1rem;
+    align-items: center;
+    font-size: 15px;
+    position: static;
+    
+}
+.editForm{
+width: 44vw;
+height: 4vh;
+}
+
+  .taskList li {
+    transition: transform 0.3s ease;
+}
+
+.taskList li:hover {
+    transform: scale(1.02);
+}
+.taskList li {
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.taskList li:hover {
+    background-color: #189494a2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: rotate(360deg);
+}
+.navbar a {
+    transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
